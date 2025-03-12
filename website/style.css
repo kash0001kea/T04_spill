@@ -1,0 +1,743 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* ------------ Navigation -------------- */
+header {
+    /* position: sticky;
+    top: 0; */
+    /* z-index: 1; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px 30px 100px;
+    background-color: #1a1a1a;
+    box-shadow: 0 12px 28px 0 rgba(0, 0, 0, 0.3);
+}
+
+.logo img{
+    width: 75px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    
+    font-family: 'Open sans', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    
+    /* margin-bottom: 100px; */
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav ul {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto; 
+}*/
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child{
+    margin-right: 0;
+}
+
+.menu a{
+    display: block;
+    padding: 10px;
+    color:#fff;
+    text-decoration: none;
+    transition-duration: 0.4s;
+    text-align: end;
+}
+
+nav a:visited {
+    text-decoration: none;
+    color: #fff;
+}
+nav a:hover {
+    text-decoration: none;
+    /* font-size: 1.5rem;  */
+    color:#775b91;
+}
+nav a:active {
+    text-decoration: underline;
+} 
+
+.burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: none;
+  }
+
+  @media (max-width: 800px){
+   
+    /* ---------------- BURGER MENU ---------------- */
+    header{
+        padding: 20px 20px 20px 20px;
+    }
+    
+    .menu {
+        display: none;
+      }
+      .burger {
+        display: block;
+      }
+
+      .burger.active .line:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+        transition: 0.2s linear;
+      }
+    
+      .burger.active .line:nth-child(2) {
+        opacity: 0;
+        transition: 0.15s linear;
+      }
+    
+      .burger.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
+        transition: 0.2s linear;
+      }
+    
+      nav.active .menu {
+        display: block;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+    
+      nav.active .menu li {
+        margin: 10px 20px;
+      }
+    
+      nav.active .menu a {
+        font-size: 1.5rem;
+      }
+    
+    }
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+/* -------------------------------------------------------------------------------- */
+
+/* --------- Margin Reset ------------ */
+/* body{
+    margin: 0;
+} */
+
+/* --------- Game Screen ------------ */
+#screen {
+    width: 100%;
+    aspect-ratio: 16/9;
+    position: relative;
+    overflow: hidden;
+    container-type: inline-size;
+}
+
+#game {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#start {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(SVG/start_screen.svg);
+    background-size: cover;
+}
+
+#start_bttn_container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 15%;
+    animation-name: float_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  @keyframes float_kf {
+    100%{
+    translate: 0 10%;
+    }
+}
+
+#start_button
+ {
+    /* position: absolute;
+    top: 50%;
+    left: 20%;
+    width: 15%; */
+    aspect-ratio: 200/72;
+    background-image: url(SVG/start_bttn.svg);
+    background-size: cover;
+}
+#how_to_play_bttn{
+    /* position: absolute;
+    top: 70%;
+    left: 20%;
+    width: 15%; */
+    aspect-ratio: 200/72;
+    background-image: url(SVG/how_to_play_bttn.svg);
+    background-size: cover;
+}
+
+#how_to_play {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(SVG/how_to_play.svg);
+    background-size: cover;
+}
+#play_bttn {
+    position: absolute;
+    top: 80%;
+    left: 35%;
+    width: 15%;
+    aspect-ratio: 200/72;
+    background-image: url(SVG/play_bttn.svg);
+    background-size: cover;
+}
+#menu_bttn {
+    position: absolute;
+    top: 80%;
+    left: 55%;
+    width: 15%;
+    aspect-ratio: 200/72;
+    background-image: url(SVG/menu_bttn.svg);
+    background-size: cover;
+}
+
+#game_over {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(SVG/game_over_screen.svg);
+    background-size: cover;
+    transition: display 2s;
+}
+#game_over_fg {
+    animation-name: pulse_kf;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+  }
+  @keyframes pulse_kf {
+    100%{
+    scale: 1.2;
+    }
+}
+#game_over_header{
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 33%;
+    left: 5%;
+    font-size: 7.5cqw;
+    color: #fff;
+    font-family: "Jersey 25", sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#game_over_text{
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    font-size: 2cqw;
+    color: #f9a73c;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#try_again {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 15%;
+    aspect-ratio: 200/72;
+    background-image: url(SVG/try_again_bttn.svg);
+    background-size: cover;
+}
+
+#quit_bttn1{
+    position: absolute;
+    top: 70%;
+    left: 23%;
+    width: 15%;
+    aspect-ratio: 200/72;
+    background-image: url(SVG/quit_bttn.svg);
+    background-size: cover;
+}
+
+#level_complete {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(SVG/level_complete_screen_bg.svg);
+    background-size: cover;
+}
+#level_complete_fg {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(SVG/level_complete_fg.svg);
+    background-size: cover;
+    pointer-events: none;
+
+    animation-name: float_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+#level_complete_header {
+    width: 50%;
+    height: 20%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    font-size: 6cqw;
+    color: #fff;
+    font-family: "Jersey 25", sans-serif;
+    text-transform: uppercase;
+}
+
+#level_complete_text {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    top: 55%;
+    left: 5%;
+    font-size: 2.5cqw;
+    color: #f9a73c;
+    font-family: sans-serif;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+#play_again{
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    width: 15%;
+    aspect-ratio: 200/72;
+    background-image: url(SVG/play_again_bttn.svg);
+    background-size: cover;
+}
+
+#quit_bttn2{
+    position: absolute;
+    top: 70%;
+    left: 23%;
+    width: 15%;
+    aspect-ratio: 200/72;
+    background-image: url(SVG/quit_bttn.svg);
+    background-size: cover;
+}
+
+#game_background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(SVG/background_1.svg);
+    background-size: cover;
+}
+
+#game_elements {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+#game_foreground {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-image: url(SVG/foreground_1.svg);
+    background-size: cover;
+    pointer-events: none;
+
+    animation-name: float_kf;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+  @keyframes foreground_kf {
+    0% {
+    }
+  
+    100% {
+      transform: translateY(2%);
+    }
+  }
+
+/* ------------- GAME U.I. -------------- */
+#game_ui {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    pointer-events: none;
+}
+
+#score_board{
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 10%;
+    aspect-ratio: 5/1;
+    background-color:bisque ;
+    
+    text-align: center; 
+    border-radius: 500px;
+}
+
+#points{
+    text-transform: uppercase;
+    font-size: 1cqw;
+    font-weight: 500;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+#life_board {
+    position: absolute;
+    top: 17%;
+    left: 2%;
+    width: 20%;
+    display: flex;
+    gap: 5%;
+  }
+  #life1, #life2, #life3 {
+    width: 25%;
+    aspect-ratio: 309/291;
+    background-image: url(SVG/3_life.svg);
+    background-size: cover;
+  }
+
+  .hide {
+    display: none;
+  }
+
+/* #life_board{
+    position: absolute;
+    top: 15%;
+    left: 2%;
+    width: 10%;
+    aspect-ratio: 5/1;
+    background-color:bisque ;
+    
+    text-align: center; 
+    border-radius: 500px;
+}
+
+#life{
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 10px;
+    font-family: sans-serif;
+} */
+
+/* ------------ TIMER ------------- */
+#time_board{
+    position: absolute;
+    top: 29%;
+    left: 2%;
+    width: 10%;
+    aspect-ratio: 373/265.53;
+}
+
+#brain_outline{
+    position: absolute;
+    background-image: url(SVG/brain_outline.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#brain_fill{
+    position: absolute;
+    background-image: url(SVG/brain_fill.svg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.timer{
+    animation-name: timer_kf;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    /* for testing */
+    /* animation-iteration-count: infinite;
+    animation-direction: alternate; */
+}
+
+@keyframes timer_kf{
+    0%{
+        clip-path: inset(0 0 0);
+    }
+
+    100%{
+        clip-path: inset( 100% 0 0);
+    }
+}
+
+/* --------- characters --------- */
+#good_container1, 
+#good_container2,
+#good_container3 {
+    position: absolute;
+    /* top: 45%; */
+    /* left: 35%; */
+    width: 12%;
+    aspect-ratio: 1.5/1;
+  }
+  
+#good_sprite1,
+#good_sprite2,
+#good_sprite3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(SVG/good.svg);
+    background-size: cover;
+
+  }
+  
+#bad_container1, 
+#bad_container2, 
+#bad_container3 {
+    position: absolute;
+    /* left: 50%; */
+    width: 8%;
+    aspect-ratio: 1.05/1;
+    /* top: 10%; */
+  }
+  
+#bad_sprite1, 
+#bad_sprite2, 
+#bad_sprite3  {
+    width: 100%;
+    height: 100%;
+    background-image: url(SVG/bad.svg);
+    background-size: 100%;
+  }
+  
+  .pos1 {
+    left: 25%; 
+  }
+  .pos2 {
+    left: 30%;
+  }
+  .pos3 {
+    left: 35%;
+  }
+  .pos4 {
+    left: 45%;
+  }
+  .pos5 {
+    left: 55%;
+  }
+  .pos6 {
+    left: 65%;
+  }
+  .pos7 {
+    left: 75%;
+  }
+  .pos8 {
+    left: 85%;
+  }
+  
+  .delay1{
+    animation-delay: 0s;
+  }
+  .delay2{
+    animation-delay: 0.5s;
+  }
+  .delay3{
+    animation-delay: 1s;
+  }
+  .delay4{
+    animation-delay: 1.5s;
+  }
+
+  /* -------------- Animations ------------------ */
+  
+  .vanish {
+    animation-name: vanish_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes vanish_kf {
+    0% {
+      opacity: 1;
+      scale: 1;
+      rotate: 0deg;
+    }
+    30% {
+        scale: 1.5;
+    }
+    100% {
+      opacity: 0;
+      scale: 0;
+      rotate: 360deg;
+    }
+  }
+
+  .fall {
+    animation-name: fall_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes fall_kf {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    10%{opacity: 100%;}
+  
+    90%{opacity: 100%;}
+    100% {
+      transform: translateY(700%);
+      opacity: 0;
+    }
+  }
+
+  .bad_fall {
+    animation-name: fall_kf;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+
+  .spin {
+    animation-name: spin_kf;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes spin_kf {
+    0% {
+      rotate: 0deg;
+    }
+  
+    100% {
+      rotate: 360deg;
+    }
+  }
+
+  .speed1 {
+    animation-duration: 3s;
+  }
+  
+  .speed2 {
+    animation-duration: 2.5s;
+  }
+  
+  .speed3 {
+    animation-duration: 2s;
+  }
+
+
+
+/*---------- bad animation scycle --------- */
+.dance {
+    animation-name: dance_kf;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+  }
+  
+  @keyframes dance_kf {
+    0% {
+        background-image: url(SVG/bad_guy_dance/bad.svg);
+        /* background-size: 100%; */
+    }
+    33%{
+        background-image: url(SVG/bad_guy_dance/bad_1.svg);
+    }
+    66%{
+        background-image: url(SVG/bad_guy_dance/bad_2.svg);
+    }
+    100% {
+        background-image: url(SVG/bad_guy_dance/bad_3.svg);
+    }
+  }
