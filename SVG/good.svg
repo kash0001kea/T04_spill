@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Good_Guy" data-name="Good Guy" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 659.97 449.96">
+  <defs>
+    <style>
+      .cls-1 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-width: 15px;
+      }
+
+      .cls-2, .cls-4, .cls-5, .cls-6 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-5 {
+        stroke: #f7941d;
+      }
+
+      .cls-3, .cls-7, .cls-8 {
+        stroke-width: 0px;
+      }
+
+      .cls-7 {
+        fill: #f7941d;
+      }
+
+      .cls-4, .cls-6 {
+        stroke: #ab670d;
+      }
+
+      .cls-8 {
+        fill: #655385;
+      }
+
+      .cls-5, .cls-6 {
+        stroke-width: 10px;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-3" x="-559.51" y="-1274.21" width="1600" height="900"/>
+    </clipPath>
+  </defs>
+  <g class="cls-1">
+    <rect class="cls-8" x="-559.51" y="-1274.21" width="1600" height="2227.13"/>
+  </g>
+  <g>
+    <circle class="cls-7" cx="330.44" cy="215.93" r="153.72"/>
+    <path class="cls-2" d="M355.97,414.27c89.27,11.13,117.79-44.52,39.95-62.94"/>
+    <path class="cls-2" d="M303.95,414.27c-89.27,11.13-117.79-44.52-39.95-62.94"/>
+    <g>
+      <path class="cls-5" d="M180.97,211.58c-38.57,38.57-100.99,38.57-139.56,0"/>
+      <path class="cls-5" d="M42.19,211.91c-7.33,6.06-25.82-3.12-37.19-16.86"/>
+      <path class="cls-5" d="M42.19,211.91c-11.73-7.27-19.69-35.92,4.31-23.28"/>
+      <path class="cls-5" d="M42.19,211.91c2.53,9.17,30.54-3.26,11.09-16.86"/>
+      <path class="cls-5" d="M40.67,212.93c-3.69,8.77-19.23,11.71-35.67,4.8"/>
+    </g>
+    <g>
+      <path class="cls-5" d="M479,213.67c38.57,38.57,100.99,38.57,139.56,0"/>
+      <path class="cls-5" d="M617.78,214c7.33,6.06,25.82-3.12,37.19-16.86"/>
+      <path class="cls-5" d="M617.78,214c11.73-7.27,19.69-35.92-4.31-23.28"/>
+      <path class="cls-5" d="M617.78,214c-2.53,9.17-30.54-3.26-11.09-16.86"/>
+      <path class="cls-5" d="M619.3,215.02c3.69,8.77,19.23,11.71,35.67,4.8"/>
+    </g>
+    <path class="cls-4" d="M409.74,178.12c0,14.85-12.04,26.88-26.88,26.88s-26.88-12.04-26.88-26.88"/>
+    <path class="cls-4" d="M297.36,178.12c0,14.85-12.04,26.88-26.88,26.88s-26.88-12.04-26.88-26.88"/>
+    <line class="cls-2" x1="355.97" y1="414.27" x2="348.93" y2="442.46"/>
+    <line class="cls-2" x1="305.2" y1="414.27" x2="312.24" y2="442.46"/>
+    <line class="cls-6" x1="297.88" y1="268.7" x2="362.99" y2="268.7"/>
+    <rect class="cls-7" x="313.5" y="55.78" width="126.28" height="52.24" rx="26.12" ry="26.12" transform="translate(62.75 305.58) rotate(-47.74)"/>
+    <rect class="cls-7" x="269.44" y="35.16" width="126.28" height="52.24" rx="26.12" ry="26.12" transform="translate(170 357.81) rotate(-71.71)"/>
+    <rect class="cls-7" x="221.31" y="55.78" width="126.28" height="52.24" rx="26.12" ry="26.12" transform="translate(241.44 374.76) rotate(-97.71)"/>
+  </g>
+</svg>
